@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .spiner {
+      background-color: gray;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border-top: 20px solid black;
+      border-bottom: 20px solid yellow;
+      animation: ani 2.5s linear infinite;
+      border-color: rgb(7, 7, 7);
+    }
+    @keyframes ani {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .ball {
+      color: bisque;
+      border-radius: 50px;
+      transition: 2s;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      to {
+        transform: bounce;
+      }
+    }
+  </style>
+  <body>
+    <div class="spiner"></div>
+    <div class="ball"></div>
+  </body>
+</html>
